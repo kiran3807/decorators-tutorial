@@ -55,8 +55,8 @@ is equivalent to
 essentially a higher-order function returning another function. To be more precise one callable object returning another callable object
 
 To go in depth `@` desugars the decorator in 2 flavours depending on wether arguments are passed or not. 
-1. The decorator function
-2. The decorator factory.
+* 1. The decorator function
+* 2. The decorator factory.
 
 ## Note :
 
