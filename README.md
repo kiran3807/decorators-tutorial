@@ -23,5 +23,19 @@ The scope in python is lexical not dynamic. That is the variables resolution, wh
 
 If we return a inner function, that function has access to the variables defined in it's enclosing scope. This has an important implication. This means that the scope of the enclosing function does not die immeadetly if returns an inner function. This is nothing but a closure. This is one of the reasons as to why we can call python a functional language
 
+### __call__ magic method :
+
+In python if we have an object foo and we call it using this syntax :
+`foo()`
+
+It is usefull to think of it as a short hand for `foo.__call__()`. In other words any object that has implemented this method is callable like a function. For example class-objects in python implement this method. That is how we are able to get a new
+instance of a class when we simply do this :
+
+`instance = MyClass()`
+
+### `*args` and `**kargs` :
+
+
+
 
 
