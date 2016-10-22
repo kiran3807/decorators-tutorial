@@ -1,6 +1,14 @@
 # decorators-tutorial
 Yet another decorators tutorial
 
+## Motivation :
+
+Decoraters are essentially allow us to modify the function we are decorating without changing the source of that function. They are usually used to augument the functions being decorated. Kinda like what would you do with aspect-oriented programming in Java
+
+Very handy to enforce the open-close principle, Other uses include type-checking, making a random class a single-ton at will
+
+some more examples here : http://stackoverflow.com/questions/489720/what-are-some-common-uses-for-python-decorators?rq=1
+
 ## The Basics :
 
 ### Closures : 
