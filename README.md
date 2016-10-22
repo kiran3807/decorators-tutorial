@@ -35,6 +35,34 @@ instance of a class when we simply do this :
 
 ### `*args` and `**kargs` :
 
+Python provides us a way to pass multiple arguments to a function. it uses two operators `*` and `**`. The former is used to pass the arguments by position and the latter by key-word arguments. By convention we use `*args` for postion parameters and `**kwargs` for key-word arguments.
+
+We can also use `*` and `**` as a sort of "spread" operators, that is if we have a tuple `t` we can expand it as positional params on foo : `foo(*t)`. The same goes for a dict d, whose name and key-value pairs can be expanded as key word arguments
+
+`foo(**d)`
+
+### Decorators :
+
+Decorators in python, in its most simple case are a syntax sugar for this :
+
+`@foo
+def bar():
+  bar`
+is equivalent to 
+
+`bar = foo(bar)`
+
+essentially a higher-order function returning another function. To be more precise one callable object returning another callable object
+
+To go in depth `@` desugars the decorator in 2 flavours depending on wether arguments are passed or not. 
+1. The decorator function
+2. The decorator factory.
+
+## Note :
+
+In the wild  we generally find that functions and classes are used to decorate other functions and classes. the semantics for the combinations there in are slightly different.
+
+
 
 
 
